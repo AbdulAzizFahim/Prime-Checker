@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>
+        My First Web App!
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card" style="margin: 10px 35% 10px;">
+        <div class="card-body">
+            <h1 style="color: #800011;float: left;">............PRIME CHECKER...........</h1>
+
+        </div>
+    </div>
+
+    <div class="card text-center" style="width: 80%; margin: 100px auto 100px;">
+
+        <div class="card-header">
+
+        </div>
+
+
+        <div class="card-body">
+            <form action="/submit" method="get" style="margin: 10px 30% 10px;">
+                <p style="text-align: justify;">
+                    LEFT RANGE : <input type="number" step="0.01" class="form-control" name="number1" /></br>
+                </p>
+                <p style="text-align: justify;">
+                    RIGHT RANGE : <input type="number" step="0.01" class="form-control" name="number2" /></br>
+                </p>
+                <p><input type="submit" class="btn btn-primary mb-2" value="submit" /></p>
+        </div>
+
+        <div class="card-footer text-muted">
+            <h2 style="margin: 10px 30% 10px;color: green;">Result: {{result}}</h3>
+        </div>
+        <a href="/about" class="btn btn-primary"> Learn about Sieve Algorithm </a>
+    </div>
+
+
+</body>
+
+</html>
