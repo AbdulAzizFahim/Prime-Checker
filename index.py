@@ -37,7 +37,7 @@ def submit():
     R= int (right)
     cnt = 0;
     flag = True
-    if(left>right): 
+    if(L>R): 
         ans = "INVALID RANGE"
         flag = False
     else:
